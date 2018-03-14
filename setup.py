@@ -30,7 +30,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     readmetxt = f.read()
 
 kwargs = {}
-install_requires = ['requests', 'ecdsa', 'pbkdf2', 'pycrypto', 'scrypt', 'sqlalchemy']
+install_requires = ['requests', 'ecdsa', 'pbkdf2', 'scrypt', 'sqlalchemy']
 if sys.version_info < (3, 4):
     install_requires.append('enum34')
 kwargs['install_requires'] = install_requires
